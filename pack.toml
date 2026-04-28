@@ -1,0 +1,13 @@
+name = "Mods For Days"
+author = "Qwertik"
+version = "0.1.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "126e89136b43f3899a2ad8e62056d861d9469af11e503510ad4170aedda419db"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.228"
