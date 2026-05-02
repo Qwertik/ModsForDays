@@ -49,6 +49,78 @@ jobs:
           # Bring client zip back
           mv "/tmp/ZephyrsWake-${{ steps.version.outputs.tag }}-client.zip" .
 
+      - name: Generate changelog
+        id: changelog
+        run: |
+          # Find the previous tag
+          PREV_TAG=$(git tag --sort=-v:refname | grep -E '^v[0-9]' | sed -n '2p')
+
+          ADDED=""
+          UPDATED=""
+          REMOVED=""
+          CONFIG=""
+
+          if [ -z "$PREV_TAG" ]; then
+            # First release — list all mods as added
+            for f in mods/*.pw.toml; do
+              NAME=$(grep '^name' "$f" | head -1 | sed 's/name = "//;s/"//')
+              FILE=$(grep '^filename' "$f" | head -1 | sed 's/filename = "//;s/"//')
+              ADDED="${ADDED}- ${NAME} (${FILE})\n"
+            done
+          else
+            # Diff mods against previous tag
+            for f in mods/*.pw.toml; do
+              BASENAME=$(basename "$f")
+              if ! git show "${PREV_TAG}:mods/${BASENAME}" &>/dev/null; then
+                NAME=$(grep '^name' "$f" | head -1 | sed 's/name = "//;s/"//')
+                FILE=$(grep '^filename' "$f" | head -1 | sed 's/filename = "//;s/"//')
+                ADDED="${ADDED}- ${NAME} (${FILE})\n"
+              elif ! git diff --quiet "${PREV_TAG}" -- "mods/${BASENAME}"; then
+                NAME=$(grep '^name' "$f" | head -1 | sed 's/name = "//;s/"//')
+                FILE=$(grep '^filename' "$f" | head -1 | sed 's/filename = "//;s/"//')
+                UPDATED="${UPDATED}- ${NAME} (${FILE})\n"
+              fi
+            done
+            # Check for removed mods
+            for f in $(git ls-tree --name-only "${PREV_TAG}" mods/); do
+              if [ ! -f "$f" ]; then
+                NAME=$(git show "${PREV_TAG}:${f}" | grep '^name' | head -1 | sed 's/name = "//;s/"//')
+                REMOVED="${REMOVED}- ${NAME}\n"
+              fi
+            done
+            # Check for config changes
+            if ! git diff --quiet "${PREV_TAG}" -- config/ 2>/dev/null; then
+              for f in $(git diff --name-only "${PREV_TAG}" -- config/); do
+                CONFIG="${CONFIG}- ${f}\n"
+              done
+            fi
+          fi
+
+          # Build changelog
+          NOTES=""
+          if [ -n "$ADDED" ]; then
+            NOTES="${NOTES}### Added\n${ADDED}\n"
+          fi
+          if [ -n "$UPDATED" ]; then
+            NOTES="${NOTES}### Updated\n${UPDATED}\n"
+          fi
+          if [ -n "$REMOVED" ]; then
+            NOTES="${NOTES}### Removed\n${REMOVED}\n"
+          fi
+          if [ -n "$CONFIG" ]; then
+            NOTES="${NOTES}### Config Changes\n${CONFIG}\n"
+          fi
+          if [ -z "$NOTES" ]; then
+            NOTES="No mod changes in this release."
+          fi
+
+          echo -e "$NOTES" > /tmp/changelog.md
+          {
+            echo "notes<<CHANGELOG_EOF"
+            echo -e "$NOTES"
+            echo "CHANGELOG_EOF"
+          } >> "$GITHUB_OUTPUT"
+
       - name: Upload to CurseForge (client)
         id: cf-upload
         if: vars.CURSEFORGE_PROJECT_ID != ''
@@ -59,7 +131,7 @@ jobs:
           game_endpoint: minecraft
           file_path: ZephyrsWake-${{ steps.version.outputs.tag }}-client.zip
           display_name: "Zephyr's Wake ${{ steps.version.outputs.tag }}"
-          changelog: "See https://github.com/${{ github.repository }}/releases/tag/${{ steps.version.outputs.tag }}"
+          changelog: ${{ steps.changelog.outputs.notes }}
           changelog_type: markdown
           game_versions: "1.21.1"
           release_type: release
@@ -73,7 +145,7 @@ jobs:
           game_endpoint: minecraft
           file_path: ZephyrsWake-${{ steps.version.outputs.tag }}-server.zip
           display_name: "Zephyr's Wake ${{ steps.version.outputs.tag }} (Server)"
-          changelog: "Server pack for ${{ steps.version.outputs.tag }}"
+          changelog: ${{ steps.changelog.outputs.notes }}
           changelog_type: markdown
           game_versions: "1.21.1"
           release_type: release
@@ -82,7 +154,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          generate_release_notes: true
+          body_path: /tmp/changelog.md
           files: |
             ZephyrsWake-${{ steps.version.outputs.tag }}-client.zip
             ZephyrsWake-${{ steps.version.outputs.tag }}-server.zip
