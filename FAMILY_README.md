@@ -1,38 +1,38 @@
-# Mods For Days — How to Manage the Modpack
+# Zephyr's Wake — How to Manage the Modpack
 
 This guide is for anyone who wants to add, remove, or configure mods without touching the command line.
 
-## Adding Mods (Web UI)
+## Installing the Modpack
 
-1. Go to <https://mods.theduckylab.org>
-2. Log in (you'll be prompted by Authelia first)
-3. Use the admin password the server admin gave you
-4. Search for mods and click to add them
-5. Changes are automatically saved and pushed to GitHub
-6. The Minecraft server restarts automatically within ~2 minutes
+### CurseForge App (easiest)
+1. Download the latest **client** zip from [GitHub Releases](https://github.com/Qwertik/ZephyrsWake/releases)
+2. Open CurseForge App → **Create Custom Profile** → **Import**
+3. Select the downloaded zip
+4. Click **Play** and connect to the server
+
+### Prism Launcher
+1. Download the latest **client** zip from [GitHub Releases](https://github.com/Qwertik/ZephyrsWake/releases)
+2. Click **Add Instance** → **Import** → select the zip
+3. Launch and connect to the server
 
 ## Adding Mods (GitHub Web Editor)
 
-1. Go to <https://github.dev/Qwertik/ModsForDays>
+1. Go to <https://github.dev/Qwertik/ZephyrsWake>
 2. Sign in to GitHub
 3. Add or edit files in the `mods/` folder
 4. Commit your changes to the `main` branch
-5. The server picks up changes and restarts automatically
+5. Ask the server admin to create a new release
 
 ## Editing Configs
 
-Config files live in the `config/` folder. You can edit them the same way — through the GitHub web editor or by cloning the repo locally.
+Config files live in the `config/` folder. You can edit them through the GitHub web editor by following the same steps above.
 
-## What Happens When You Push
+## Updating the Modpack
 
-1. GitHub Actions refreshes the mod index
-2. A webhook notifies the server
-3. The server broadcasts a 60-second warning in chat
-4. A world backup is created
-5. The server restarts with the updated mods
-
-Players using Prism Launcher get the new mods next time they launch.
+When a new version is released:
+1. Download the latest client zip from [GitHub Releases](https://github.com/Qwertik/ZephyrsWake/releases)
+2. Re-import it into CurseForge App or Prism Launcher
 
 ## Need Help?
 
-Ask the server admin or open an issue at <https://github.com/Qwertik/ModsForDays/issues>.
+Ask the server admin or open an issue at <https://github.com/Qwertik/ZephyrsWake/issues>.

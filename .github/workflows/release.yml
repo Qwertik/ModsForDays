@@ -1,0 +1,84 @@
+name: Build & Release Modpack
+
+on:
+  push:
+    tags: ["v*.*.*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.23"
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Extract version from tag
+        id: version
+        run: echo "tag=${GITHUB_REF#refs/tags/}" >> "$GITHUB_OUTPUT"
+
+      - name: Build client pack
+        run: |
+          packwiz refresh
+          packwiz curseforge export --side client -y
+          # packwiz names the zip from pack.toml; rename to safe filename
+          mv Zephyr*.zip "ZephyrsWake-${{ steps.version.outputs.tag }}-client.zip"
+
+      - name: Build server pack
+        run: |
+          packwiz curseforge export --side server -y
+          # Inject server startup scripts into overrides
+          mkdir -p /tmp/server-repack
+          cd /tmp/server-repack
+          unzip "$GITHUB_WORKSPACE"/Zephyr*.zip
+          cp "$GITHUB_WORKSPACE/server-files/start.sh" overrides/
+          cp "$GITHUB_WORKSPACE/server-files/start.bat" overrides/
+          rm -f "$GITHUB_WORKSPACE"/Zephyr*.zip
+          zip -r "$GITHUB_WORKSPACE/ZephyrsWake-${{ steps.version.outputs.tag }}-server.zip" .
+          cd "$GITHUB_WORKSPACE"
+          rm -rf /tmp/server-repack
+
+      - name: Upload to CurseForge (client)
+        id: cf-upload
+        if: vars.CURSEFORGE_PROJECT_ID != ''
+        uses: itsmeow/curseforge-upload@v3
+        with:
+          token: ${{ secrets.CURSEFORGE_TOKEN }}
+          project_id: ${{ vars.CURSEFORGE_PROJECT_ID }}
+          game_endpoint: minecraft
+          file_path: ZephyrsWake-${{ steps.version.outputs.tag }}-client.zip
+          display_name: "Zephyr's Wake ${{ steps.version.outputs.tag }}"
+          changelog: "See https://github.com/${{ github.repository }}/releases/tag/${{ steps.version.outputs.tag }}"
+          changelog_type: markdown
+          game_versions: "1.21.1"
+          release_type: release
+
+      - name: Upload to CurseForge (server)
+        if: vars.CURSEFORGE_PROJECT_ID != '' && steps.cf-upload.outputs.id != ''
+        uses: itsmeow/curseforge-upload@v3
+        with:
+          token: ${{ secrets.CURSEFORGE_TOKEN }}
+          project_id: ${{ vars.CURSEFORGE_PROJECT_ID }}
+          game_endpoint: minecraft
+          file_path: ZephyrsWake-${{ steps.version.outputs.tag }}-server.zip
+          display_name: "Zephyr's Wake ${{ steps.version.outputs.tag }} (Server)"
+          changelog: "Server pack for ${{ steps.version.outputs.tag }}"
+          changelog_type: markdown
+          game_versions: "1.21.1"
+          release_type: release
+          parent_file_id: ${{ steps.cf-upload.outputs.id }}
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: |
+            ZephyrsWake-${{ steps.version.outputs.tag }}-client.zip
+            ZephyrsWake-${{ steps.version.outputs.tag }}-server.zip

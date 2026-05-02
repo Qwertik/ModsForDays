@@ -1,4 +1,4 @@
-name = "Mods For Days"
+name = "Zephyr's Wake"
 author = "Qwertik"
 version = "0.1.0"
 pack-format = "packwiz:1.1.0"
@@ -6,7 +6,7 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "126e89136b43f3899a2ad8e62056d861d9469af11e503510ad4170aedda419db"
+hash = "3e33f57b2f6544ec8e798a7d259e48728b3d1cd261a12e54bdc2b04c349a6b3f"
 
 [versions]
 minecraft = "1.21.1"

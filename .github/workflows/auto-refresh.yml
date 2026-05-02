@@ -3,6 +3,12 @@ name: Auto-refresh packwiz index
 on:
   push:
     branches: [main]
+    paths:
+      - "pack.toml"
+      - "index.toml"
+      - "mods/**"
+      - "config/**"
+      - "resourcepacks/**"
 
 jobs:
   refresh:
