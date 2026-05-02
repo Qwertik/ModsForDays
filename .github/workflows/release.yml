@@ -30,6 +30,8 @@ jobs:
           packwiz curseforge export --side client -y
           # packwiz names the zip from pack.toml; rename to safe filename
           mv Zephyr*.zip "ZephyrsWake-${{ steps.version.outputs.tag }}-client.zip"
+          # Move client zip to /tmp so it doesn't interfere with server build
+          mv "ZephyrsWake-${{ steps.version.outputs.tag }}-client.zip" /tmp/
 
       - name: Build server pack
         run: |
@@ -44,6 +46,8 @@ jobs:
           zip -r "$GITHUB_WORKSPACE/ZephyrsWake-${{ steps.version.outputs.tag }}-server.zip" .
           cd "$GITHUB_WORKSPACE"
           rm -rf /tmp/server-repack
+          # Bring client zip back
+          mv "/tmp/ZephyrsWake-${{ steps.version.outputs.tag }}-client.zip" .
 
       - name: Upload to CurseForge (client)
         id: cf-upload
