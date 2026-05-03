@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/sky_archipelago/default_preset.json"
+hash = "85177c5e8fc12b8688ca61ccc8c0af013ce93b246298908cb81224fb917f9d0e"
+
+[[files]]
 file = "mods/accelerated-decay.pw.toml"
 hash = "0c31f109b6c4dca94a153fbdd827bbd5f96149fd5c7863ba0ba41fcab801afe0"
 metafile = true
