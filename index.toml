@@ -91,7 +91,7 @@ metafile = true
 
 [[files]]
 file = "mods/athena.pw.toml"
-hash = "e1599947a8d78f74c129a8420569bb2453b2ce76fdc76a7151093923ea8366c9"
+hash = "b47d581a42ff5136e77d1312f748eebafef3e7e541a58df14a3d5076d5f0ce9b"
 metafile = true
 
 [[files]]
@@ -521,7 +521,7 @@ metafile = true
 
 [[files]]
 file = "mods/sky-archipelago.pw.toml"
-hash = "cfce61605979fd174c5b155e5d218b3ed0564b84db4bec4c1edc459b00905b58"
+hash = "9431883aaa154a11dbe67d4b538072e52d6ecd8c9e84002d14c7e166b017fbfa"
 metafile = true
 
 [[files]]
@@ -541,17 +541,17 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "c9fd4099113f617d68dc88820a09af16f7c99d573460c843b4a3d02fb435cf54"
+hash = "585d1ac3e487d24ddaece1660bf969b99d0892dd2925e440d0b342b7c94cbdf9"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "642e8f52c1a6b89ff3b945851e0522d94312b15233c52e70854e0f2cfa61f330"
+hash = "f602ad6cff0ba4829f3f1b0cfe78d97db1abf75e38e3ac667658df6c887af24b"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
-hash = "3df084e1f3f30706e76d3230619bb3ebcf42c5ff709f74469b9a5dbfb1ec9030"
+hash = "d9151c58ba7dd9613bad6613a09508e86affac433652ff2fd38d907a95668649"
 metafile = true
 
 [[files]]
