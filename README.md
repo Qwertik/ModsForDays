@@ -1,41 +1,37 @@
 # Zephyr's Wake
 
-NeoForge 1.21.1 modpack managed with [packwiz](https://packwiz.infra.link/) and distributed via GitHub Releases (and optionally CurseForge).
+A NeoForge 1.21.1 modpack featuring Create, Ars Nouveau, MineColonies, Apotheosis, and 80+ mods on floating sky islands.
 
-## Distribution
+## Download
 
-Download the latest modpack from:
 - **GitHub Releases**: <https://github.com/Qwertik/ZephyrsWake/releases>
-- **CurseForge**: *(available once the project is created)*
 
-Each release includes a **client pack** and a **server pack**.
+Each release includes a **client pack** (import into CurseForge App or Prism Launcher) and a **server pack**.
 
-## How to Add a Mod
+## Installing
 
-**GitHub web editor:** Open this repo in [github.dev](https://github.dev/Qwertik/ZephyrsWake) and add `.pw.toml` files to the `mods/` folder.
+1. Download the latest `-client.zip` from [Releases](https://github.com/Qwertik/ZephyrsWake/releases)
+2. Open **CurseForge App** or **Prism Launcher** → Import → select the zip
+3. Launch and connect to the server
 
-**CLI:** Clone this repo, then:
+## Adding Mods
+
 ```bash
 packwiz curseforge add <mod-slug> -y
 packwiz refresh
+git add -A && git commit -m "add <mod>" && git push
 ```
-Commit and push to `main`.
 
-## Releasing a New Version
+## Releasing
 
-1. Commit your changes to `main`
-2. Tag the release: `git tag -a v0.2.0 -m "description of changes"`
-3. Push the tag: `git push origin v0.2.0`
-4. GitHub Actions builds and publishes client + server packs automatically
+1. Commit changes to `main`
+2. `git tag -a v0.6.0 -m "description"` → `git push origin v0.6.0`
+3. GitHub Actions builds both zips and creates a release automatically
 
-## Client Setup
+## Updating the Server
 
-See the [Client Setup Guide](https://github.com/Qwertik/ZephyrsWake/blob/main/CLIENT_SETUP.md) for CurseForge App and Prism Launcher instructions.
+```bash
+./scripts/update-server.sh v0.6.0
+```
 
-## Current Mods
-
-| Mod | Side | Description |
-|-----|------|-------------|
-| Create | Both | Mechanical building and automation |
-| Just Enough Items | Both | Recipe viewer and item lookup |
-| Sodium | Client | Performance optimization |
+Downloads the server pack from GitHub Releases and restarts the container. The `itzg/minecraft-server` image (AUTO_CURSEFORGE mode) handles mod downloads from CurseForge automatically.
