@@ -1,8 +1,28 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/anvilcore.pw.toml"
+hash = "6cea29f80c69c77c7e4001668a3f72f15eb3eb33bb99ad9cfc8b004ce41ff018"
+metafile = true
+
+[[files]]
 file = "mods/create-aeronautics.pw.toml"
 hash = "6cabae8686cf85c826d1280f00e00d67bb7672d353f669bea9f3775de39dd378"
+metafile = true
+
+[[files]]
+file = "mods/create-sky-village.pw.toml"
+hash = "a6bd82785c25839da2a34c45a73c09a896c14e7624ee3ed5448159b745a286be"
+metafile = true
+
+[[files]]
+file = "mods/create-structures-arise.pw.toml"
+hash = "8024993d9fe6402d2083ac8c39ad26b8c857ee35e00398871334afcaa192d9be"
+metafile = true
+
+[[files]]
+file = "mods/create-structures-overhaul.pw.toml"
+hash = "abdffe7d19bd5f08bea9a1c4689d5c807302e513977164bac3586ee3ef16be5a"
 metafile = true
 
 [[files]]
@@ -16,13 +36,38 @@ hash = "d068154533d9a999acbb4008f7c33d307b583d2e6db7122a69fc02921ffdb411"
 metafile = true
 
 [[files]]
+file = "mods/moogs-structure-lib.pw.toml"
+hash = "8e6bbd76144784257cfbb3a37e644772821b72592b89ac1543e1544493f2d840"
+metafile = true
+
+[[files]]
+file = "mods/moogs-voyager-structures.pw.toml"
+hash = "f8b9cdf5e0f6442cc42bf842b07799bc7b52f67d0709e75178018de86337b521"
+metafile = true
+
+[[files]]
+file = "mods/repurposed-structures.pw.toml"
+hash = "9dce62b44fc9c9cdd9e9c1c50946dbde3581978d4ddadd397340bf9d2b9354f1"
+metafile = true
+
+[[files]]
 file = "mods/sable.pw.toml"
 hash = "e8ec0a7577c9e3354b78cc613c2c5e6a9fd708a026869aba82d4ce7fc04bc2e7"
 metafile = true
 
 [[files]]
+file = "mods/shellbound-for-airship.pw.toml"
+hash = "45bfd1ceaa0195b43216b65494d5ce7d19a945663836d3a21c8ea04974533dde"
+metafile = true
+
+[[files]]
 file = "mods/sky-archipelago.pw.toml"
 hash = "cfce61605979fd174c5b155e5d218b3ed0564b84db4bec4c1edc459b00905b58"
+metafile = true
+
+[[files]]
+file = "mods/sky-whale-ship.pw.toml"
+hash = "ad9d8d873b1bbf46bc88bb2489edd961285f08f213213428f219c15ebaa24c09"
 metafile = true
 
 [[files]]
@@ -38,4 +83,9 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
 hash = "fa00dab19c0efccbe6ba767dd32e9affba3b6b56a914f6beebc0f22c184dc248"
+metafile = true
+
+[[files]]
+file = "mods/valhelsia-structures.pw.toml"
+hash = "24483b3a3f6161c72a7aa9e9e91033660866dfdf77a86b37bd18fbd2c5a9230d"
 metafile = true
