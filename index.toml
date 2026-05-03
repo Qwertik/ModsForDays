@@ -256,8 +256,18 @@ hash = "0004f14a9f41e930775229f57d22b2df5e09f43b138f8dcedd4429161e00c377"
 metafile = true
 
 [[files]]
+file = "mods/lendercataclysm.pw.toml"
+hash = "2f1a381eb3906c0a950c9d8516e8ea9d228015a468d495445062a42abc241a34"
+metafile = true
+
+[[files]]
 file = "mods/let-me-despawn.pw.toml"
 hash = "dd4dd28e505ef8a6dae0569c92b03732302094e952068db010924fe945a27170"
+metafile = true
+
+[[files]]
+file = "mods/lionfish-api.pw.toml"
+hash = "785513830b679834046baec7a2848f46a72d701548399131b8819ebfe4f0f5c8"
 metafile = true
 
 [[files]]
@@ -433,6 +443,11 @@ metafile = true
 [[files]]
 file = "mods/valhelsia-core.pw.toml"
 hash = "c00a6ef6f5e855b3144ad48f5df41d05150c5d11cecd558704f9b827b756300d"
+metafile = true
+
+[[files]]
+file = "mods/valhelsia-furniture.pw.toml"
+hash = "a1b64cca097db7972a1e0f88813f239174f0755e103a5016a261080266de8499"
 metafile = true
 
 [[files]]
