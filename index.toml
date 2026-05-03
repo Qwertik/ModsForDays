@@ -51,6 +51,11 @@ hash = "f0aa35028d210e4c3b87e3029520dea9ead7db9d639e97faad2db374f6a9b2c1"
 metafile = true
 
 [[files]]
+file = "mods/athena.pw.toml"
+hash = "e1599947a8d78f74c129a8420569bb2453b2ce76fdc76a7151093923ea8366c9"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "a0f52f47c27d6ccdbee89735e459ff955ba09cdf499ef42bc901f8426be75253"
 metafile = true
@@ -216,6 +221,11 @@ hash = "dd4dd28e505ef8a6dae0569c92b03732302094e952068db010924fe945a27170"
 metafile = true
 
 [[files]]
+file = "mods/lootr.pw.toml"
+hash = "31c3ae5e39797bb91e2b17a13d0fbf2cf5b5d87f586441020b12f7fd6e3c607a"
+metafile = true
+
+[[files]]
 file = "mods/moogs-structure-lib.pw.toml"
 hash = "8e6bbd76144784257cfbb3a37e644772821b72592b89ac1543e1544493f2d840"
 metafile = true
@@ -248,6 +258,11 @@ metafile = true
 [[files]]
 file = "mods/oh-the-trees-youll-grow.pw.toml"
 hash = "21374cb88f58ddb14208b452dfbfa55bcb8bfc44302ac5802e3949a2a4fed6b3"
+metafile = true
+
+[[files]]
+file = "mods/oritech.pw.toml"
+hash = "68727fe01256af246ebfe2953c37d2117764961c1a288743c0d69fb4621db4d4"
 metafile = true
 
 [[files]]
