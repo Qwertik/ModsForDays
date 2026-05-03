@@ -535,11 +535,6 @@ hash = "d77e4dc337b6090358c1ef01b0f99a8357e5279443e0e23e511de1be865c01c9"
 metafile = true
 
 [[files]]
-file = "mods/terrablender.pw.toml"
-hash = "4cdd3a94451efd61ad53cec5019557042cc9a3bc455632aa931663b70850958a"
-metafile = true
-
-[[files]]
 file = "mods/tool-belt.pw.toml"
 hash = "2d3b5ce1e0841c7e98c97145dab66fd1a1321deb550ec545b9302bfaf80a1c5d"
 metafile = true
