@@ -16,6 +16,26 @@ hash = "6cea29f80c69c77c7e4001668a3f72f15eb3eb33bb99ad9cfc8b004ce41ff018"
 metafile = true
 
 [[files]]
+file = "mods/apotheosis.pw.toml"
+hash = "89213937ee347c19bde57055ab13a93e9dd84978363c95810e34dbf44d44e1bc"
+metafile = true
+
+[[files]]
+file = "mods/apothic-attributes.pw.toml"
+hash = "014ee07aad95d234a4be89ab018d7cc72b9b41999bf0d5f45de11b509a10bd5e"
+metafile = true
+
+[[files]]
+file = "mods/apothic-enchanting.pw.toml"
+hash = "96354bc8654702df8ccc9ce6d91479e2e8fd4a3b60f5eb001ab761608de5c22d"
+metafile = true
+
+[[files]]
+file = "mods/apothic-spawners.pw.toml"
+hash = "73c6535aa33ece6287b6434c21edc5c16635003442e95c57b410b3acb4957a95"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "d7059efc26b419ddfc43aeef8a3ceddf098edafe0cfbcde611f30bf3e2973de8"
 metafile = true
@@ -176,6 +196,11 @@ hash = "167e16c3a9bce43fa315af831930487448833b9c5a5f00676532df8a193e27b0"
 metafile = true
 
 [[files]]
+file = "mods/gateways-to-eternity.pw.toml"
+hash = "a918d214c27222c510f6526721a1c41b0111221ac348c7d20b2a28d4691dfdd4"
+metafile = true
+
+[[files]]
 file = "mods/geckolib.pw.toml"
 hash = "68e15ffc71a84261e0dbbb317329788c21a7b9eb8060687dc8a51008cc3029fe"
 metafile = true
@@ -183,6 +208,11 @@ metafile = true
 [[files]]
 file = "mods/get-it-together-drops.pw.toml"
 hash = "2b527d9cc1b1b919deae4a829f39c71b447a5012332809ade812971eae06bf7d"
+metafile = true
+
+[[files]]
+file = "mods/hardened-armadillos.pw.toml"
+hash = "0eaf07b3e07f59e5101a8724c23969495aaa649c6714e0ececff27e5550f2646"
 metafile = true
 
 [[files]]
@@ -271,6 +301,16 @@ hash = "e552cd6521dd695465502430f1001cf98b87bc534c72b27a98d16e2c3a13b6ce"
 metafile = true
 
 [[files]]
+file = "mods/patchouli.pw.toml"
+hash = "3718e8a37d0dc2939cc350cce74bcb9c36b59f48baf4560e62804f7ca6478185"
+metafile = true
+
+[[files]]
+file = "mods/placebo.pw.toml"
+hash = "201e0be56d2d9430843688b4a04dea207732b6d60f8001fb9e6396d48aea287f"
+metafile = true
+
+[[files]]
 file = "mods/polymorph.pw.toml"
 hash = "8b725f1822c0feab9e51bef600f2ee6f4c26efbb55aa3ee9073a027f1f134202"
 metafile = true
@@ -288,6 +328,11 @@ metafile = true
 [[files]]
 file = "mods/repurposed-structures.pw.toml"
 hash = "9dce62b44fc9c9cdd9e9c1c50946dbde3581978d4ddadd397340bf9d2b9354f1"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-lib.pw.toml"
+hash = "aa83553db30adc47f86010f6443340251323a62ee3f9415a0c4332cb6d502419"
 metafile = true
 
 [[files]]
@@ -356,6 +401,21 @@ hash = "24483b3a3f6161c72a7aa9e9e91033660866dfdf77a86b37bd18fbd2c5a9230d"
 metafile = true
 
 [[files]]
+file = "mods/variants-and-ventures.pw.toml"
+hash = "b94b15835f39bab4b72e35f5fbaa61b43c1727eebaf96ae31667bdb5e64ae58b"
+metafile = true
+
+[[files]]
+file = "mods/wither-skeleton-tweaks.pw.toml"
+hash = "1e64fe8b0e6b3f7099ed41c1bbe1ec213e48e2c2c7372e130abcb59b3c6679ac"
+metafile = true
+
+[[files]]
 file = "mods/xaeros-minimap.pw.toml"
 hash = "06b1643383e54f2acb4631529c045842d7b6ef1a7c783c3acc6d11d82323f2d7"
+metafile = true
+
+[[files]]
+file = "mods/yacl.pw.toml"
+hash = "492daa3391b6079b541685db276007b286774bab3b9881505127b7aef6b3f16c"
 metafile = true
