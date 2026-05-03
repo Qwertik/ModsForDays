@@ -420,6 +420,11 @@ hash = "642e8f52c1a6b89ff3b945851e0522d94312b15233c52e70854e0f2cfa61f330"
 metafile = true
 
 [[files]]
+file = "mods/sophisticated-storage.pw.toml"
+hash = "3df084e1f3f30706e76d3230619bb3ebcf42c5ff709f74469b9a5dbfb1ec9030"
+metafile = true
+
+[[files]]
 file = "mods/structurize.pw.toml"
 hash = "9ef81e3a2eedc119c659940b940e5ab1a1ed6e37fbbc83c3edf53a8ea859aaeb"
 metafile = true
