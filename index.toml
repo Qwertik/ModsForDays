@@ -136,6 +136,11 @@ hash = "4b0ca63279620ec9ba4c63820a9d4f9ceea9b717227137ea19e5c420c820f858"
 metafile = true
 
 [[files]]
+file = "mods/curios.pw.toml"
+hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
+metafile = true
+
+[[files]]
 file = "mods/enchantment-descriptions.pw.toml"
 hash = "04cba5d12b1262ba3a1d89caae20c5e44a9010f050c549ff91f2661fb796dc7b"
 metafile = true
@@ -323,6 +328,11 @@ metafile = true
 [[files]]
 file = "mods/trashslot.pw.toml"
 hash = "164d9000bf1f25aafd1963f1b5d6000205a79ae960e3cc89177ad20eced26b31"
+metafile = true
+
+[[files]]
+file = "mods/valhelsia-core.pw.toml"
+hash = "c00a6ef6f5e855b3144ad48f5df41d05150c5d11cecd558704f9b827b756300d"
 metafile = true
 
 [[files]]
