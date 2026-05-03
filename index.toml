@@ -81,6 +81,11 @@ hash = "a0f52f47c27d6ccdbee89735e459ff955ba09cdf499ef42bc901f8426be75253"
 metafile = true
 
 [[files]]
+file = "mods/blockui.pw.toml"
+hash = "05abf6fafe4a8adf5aaa24f09b7dedfbe199a8727d925e816fc608d6357f5ba8"
+metafile = true
+
+[[files]]
 file = "mods/bookshelf.pw.toml"
 hash = "cf914684c4151076b726116a66f7bc81a6116655551bcce70a9e64e34e5aa308"
 metafile = true
@@ -163,6 +168,11 @@ metafile = true
 [[files]]
 file = "mods/curios.pw.toml"
 hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
+metafile = true
+
+[[files]]
+file = "mods/domum-ornamentum.pw.toml"
+hash = "acf14ebf63e023fd7b1a58c187f88f2091d5632e1723a816c460e511f6df711d"
 metafile = true
 
 [[files]]
@@ -256,6 +266,11 @@ hash = "31c3ae5e39797bb91e2b17a13d0fbf2cf5b5d87f586441020b12f7fd6e3c607a"
 metafile = true
 
 [[files]]
+file = "mods/minecolonies.pw.toml"
+hash = "3ea53a3421a50217c28e1aed057fd7baf08e946e90013ba12e84d3e04fad4600"
+metafile = true
+
+[[files]]
 file = "mods/moogs-structure-lib.pw.toml"
 hash = "8e6bbd76144784257cfbb3a37e644772821b72592b89ac1543e1544493f2d840"
 metafile = true
@@ -273,6 +288,11 @@ metafile = true
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "057044d2179d9e10b616ef8fa4cc870ad350842fc5c325ce0b3766160852cd13"
+metafile = true
+
+[[files]]
+file = "mods/multi-piston.pw.toml"
+hash = "bc9449306cb2c32f16347779291d68e5fba67f85d7aca04b4b9cc1c033ec4083"
 metafile = true
 
 [[files]]
@@ -351,6 +371,16 @@ hash = "45bfd1ceaa0195b43216b65494d5ce7d19a945663836d3a21c8ea04974533dde"
 metafile = true
 
 [[files]]
+file = "mods/silent-gear.pw.toml"
+hash = "deb0ac122e0fb3bf2cc14593ede770e456624e2d16137316982af2a0d17a9a13"
+metafile = true
+
+[[files]]
+file = "mods/silent-lib.pw.toml"
+hash = "c69dcffbc7e5fd5a78a8292d696d589be53e9a6c3edbb8317d9fc441b54589f9"
+metafile = true
+
+[[files]]
 file = "mods/sky-archipelago.pw.toml"
 hash = "cfce61605979fd174c5b155e5d218b3ed0564b84db4bec4c1edc459b00905b58"
 metafile = true
@@ -376,6 +406,11 @@ hash = "fa00dab19c0efccbe6ba767dd32e9affba3b6b56a914f6beebc0f22c184dc248"
 metafile = true
 
 [[files]]
+file = "mods/structurize.pw.toml"
+hash = "9ef81e3a2eedc119c659940b940e5ab1a1ed6e37fbbc83c3edf53a8ea859aaeb"
+metafile = true
+
+[[files]]
 file = "mods/terrablender-neoforge.pw.toml"
 hash = "d77e4dc337b6090358c1ef01b0f99a8357e5279443e0e23e511de1be865c01c9"
 metafile = true
@@ -383,6 +418,11 @@ metafile = true
 [[files]]
 file = "mods/tool-belt.pw.toml"
 hash = "2d3b5ce1e0841c7e98c97145dab66fd1a1321deb550ec545b9302bfaf80a1c5d"
+metafile = true
+
+[[files]]
+file = "mods/towntalk.pw.toml"
+hash = "a7074e8e499d34f5ce633dbd33f818e376dd1941ec5b1d97a33acd019df69b5a"
 metafile = true
 
 [[files]]
