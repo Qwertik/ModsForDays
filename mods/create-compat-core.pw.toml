@@ -1,0 +1,13 @@
+name = "Create: Compat Core"
+filename = "create_compat_core-1.0.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bb012df2ca15ada27ab4b8c377a2dac9fe4202f0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6949801
+project-id = 1338699
