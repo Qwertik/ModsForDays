@@ -200,6 +200,11 @@ hash = "37c21deaf7e65569fa9dcc59a477a55ab8937153c591f1bc4d6249de9582044f"
 metafile = true
 
 [[files]]
+file = "mods/create-rustic-structures.pw.toml"
+hash = "ce9000fdc0d92fb85f00d0faa3aef9e8606bd1215dc3da1ef9298ef50b35fe47"
+metafile = true
+
+[[files]]
 file = "mods/create-sky-village.pw.toml"
 hash = "a6bd82785c25839da2a34c45a73c09a896c14e7624ee3ed5448159b745a286be"
 metafile = true
