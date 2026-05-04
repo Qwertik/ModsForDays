@@ -120,6 +120,11 @@ hash = "7904c140247e0d8a87231cf4d36718fc018e0f851dbec2517b673acdc25547df"
 metafile = true
 
 [[files]]
+file = "mods/byzantine-styles-pack-for-minecolonies.pw.toml"
+hash = "332053c9155a762bccd5bc8f5c572020306432e08aefad7b79ce4394bf013512"
+metafile = true
+
+[[files]]
 file = "mods/chisel-reborn.pw.toml"
 hash = "53585ee2041174626662b53c08795a14d038874359079add62df022b64e6b9bd"
 metafile = true
