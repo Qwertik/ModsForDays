@@ -570,6 +570,11 @@ hash = "9e08f657c7848e0d35504e62657907248c0741df82f2d52b0222da79dc0fbe20"
 metafile = true
 
 [[files]]
+file = "mods/sophisticated-storage-create-integration.pw.toml"
+hash = "c66a21cc5dcab2ba241b47c42544cf0ca1bccdf8e6605c6d332837fb2dbe98ca"
+metafile = true
+
+[[files]]
 file = "mods/sophisticated-storage.pw.toml"
 hash = "d9151c58ba7dd9613bad6613a09508e86affac433652ff2fd38d907a95668649"
 metafile = true
