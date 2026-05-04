@@ -221,7 +221,7 @@ metafile = true
 
 [[files]]
 file = "mods/cucumber.pw.toml"
-hash = "1cb2c004ea6d9750b2c9f399ddb58be0335adc710e63b9cdae5d620ad86dbd5b"
+hash = "a1e99e73f9b3d71358832896d6a08d45c55b7a0037e00df69f98ba6880994341"
 metafile = true
 
 [[files]]
@@ -406,7 +406,7 @@ metafile = true
 
 [[files]]
 file = "mods/mystical-agriculture.pw.toml"
-hash = "2756c1f18497c3ba184ab9129014f964be4088e2f0ef1e899bd40f000f9602e6"
+hash = "4aedab305e3285223dcbe6e6c7ca745a1ef501f9c32fdf4aa292fe5c5d6c1657"
 metafile = true
 
 [[files]]
@@ -426,7 +426,7 @@ metafile = true
 
 [[files]]
 file = "mods/occultism.pw.toml"
-hash = "d242059492dff39abdea1467ec9ac6c42314c5e1e6d8d63d2de28e7d6471b839"
+hash = "ac78a47fd6a0547801dd8d1ef5805394b08d06303a64f4a261f8247f314d3ab0"
 metafile = true
 
 [[files]]
@@ -521,7 +521,7 @@ metafile = true
 
 [[files]]
 file = "mods/sky-archipelago.pw.toml"
-hash = "9431883aaa154a11dbe67d4b538072e52d6ecd8c9e84002d14c7e166b017fbfa"
+hash = "43cd601dde4b50f5f12ae8b09690bedf22e8c65592e42b45bb2af3358596e12a"
 metafile = true
 
 [[files]]
@@ -546,7 +546,7 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "f602ad6cff0ba4829f3f1b0cfe78d97db1abf75e38e3ac667658df6c887af24b"
+hash = "9e08f657c7848e0d35504e62657907248c0741df82f2d52b0222da79dc0fbe20"
 metafile = true
 
 [[files]]
