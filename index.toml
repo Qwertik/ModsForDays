@@ -100,6 +100,11 @@ hash = "b47d581a42ff5136e77d1312f748eebafef3e7e541a58df14a3d5076d5f0ce9b"
 metafile = true
 
 [[files]]
+file = "mods/auroras.pw.toml"
+hash = "22523481b7a5b3be8e086462d6598a209d5ccdd3fea0c6a2c6384e9aa92b40ec"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "a0f52f47c27d6ccdbee89735e459ff955ba09cdf499ef42bc901f8426be75253"
 metafile = true
