@@ -580,6 +580,11 @@ hash = "d9151c58ba7dd9613bad6613a09508e86affac433652ff2fd38d907a95668649"
 metafile = true
 
 [[files]]
+file = "mods/spice-of-life-carrot-edition.pw.toml"
+hash = "e520ad446364dff7dd50896108a96140f3f5598b72003dade5b17308fa9ef2a9"
+metafile = true
+
+[[files]]
 file = "mods/structurize.pw.toml"
 hash = "9ef81e3a2eedc119c659940b940e5ab1a1ed6e37fbbc83c3edf53a8ea859aaeb"
 metafile = true
