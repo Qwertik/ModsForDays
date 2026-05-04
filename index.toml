@@ -10,6 +10,11 @@ hash = "0c31f109b6c4dca94a153fbdd827bbd5f96149fd5c7863ba0ba41fcab801afe0"
 metafile = true
 
 [[files]]
+file = "mods/alltheleaks.pw.toml"
+hash = "4d390d60d7925cbc8e363d1d93fbc378e51ab95313bcdbede86f8c7996e42eb3"
+metafile = true
+
+[[files]]
 file = "mods/almanac-lib.pw.toml"
 hash = "9e414657b3a5e60c99e241c58c33cd1e6444780d29aa64c5f897ce1aaf24a00d"
 metafile = true
