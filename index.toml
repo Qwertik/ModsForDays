@@ -515,6 +515,11 @@ hash = "aa83553db30adc47f86010f6443340251323a62ee3f9415a0c4332cb6d502419"
 metafile = true
 
 [[files]]
+file = "mods/rising-toxicity.pw.toml"
+hash = "6a722d3b885b3847d4a6c5989421316423e261cb0cb9c413cece55cc3c0ae35b"
+metafile = true
+
+[[files]]
 file = "mods/sable.pw.toml"
 hash = "e8ec0a7577c9e3354b78cc613c2c5e6a9fd708a026869aba82d4ce7fc04bc2e7"
 metafile = true
