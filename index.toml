@@ -376,7 +376,7 @@ metafile = true
 
 [[files]]
 file = "mods/lootr.pw.toml"
-hash = "31c3ae5e39797bb91e2b17a13d0fbf2cf5b5d87f586441020b12f7fd6e3c607a"
+hash = "d7ed4aa2c8e01de8d38b08f96b7f10dac30b96df1c1e7f4b924588a36f5bdca3"
 metafile = true
 
 [[files]]
@@ -515,11 +515,6 @@ hash = "aa83553db30adc47f86010f6443340251323a62ee3f9415a0c4332cb6d502419"
 metafile = true
 
 [[files]]
-file = "mods/rising-toxicity.pw.toml"
-hash = "6a722d3b885b3847d4a6c5989421316423e261cb0cb9c413cece55cc3c0ae35b"
-metafile = true
-
-[[files]]
 file = "mods/sable.pw.toml"
 hash = "e8ec0a7577c9e3354b78cc613c2c5e6a9fd708a026869aba82d4ce7fc04bc2e7"
 metafile = true
@@ -571,7 +566,7 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "9e08f657c7848e0d35504e62657907248c0741df82f2d52b0222da79dc0fbe20"
+hash = "31656b2f1ff31e740b6a1b440acfa1c8a99fab91761b84753ac682650bb4ad53"
 metafile = true
 
 [[files]]
@@ -661,7 +656,7 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "06b1643383e54f2acb4631529c045842d7b6ef1a7c783c3acc6d11d82323f2d7"
+hash = "1d3065f0d709c7cfdeb5d83efacd47597d6e687c622ac596d1f0bde103fe1d87"
 metafile = true
 
 [[files]]
