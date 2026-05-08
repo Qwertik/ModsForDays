@@ -5,6 +5,10 @@ file = "config/sky_archipelago/default_preset.json"
 hash = "85177c5e8fc12b8688ca61ccc8c0af013ce93b246298908cb81224fb917f9d0e"
 
 [[files]]
+file = "kubejs/server_scripts/toxicity_reset.js"
+hash = "e1dcedd94520537ec2098b77b1f925673735fa305a18dd40af0dbafc83fe8f5f"
+
+[[files]]
 file = "mods/accelerated-decay.pw.toml"
 hash = "0c31f109b6c4dca94a153fbdd827bbd5f96149fd5c7863ba0ba41fcab801afe0"
 metafile = true
@@ -522,6 +526,11 @@ metafile = true
 [[files]]
 file = "mods/rhino.pw.toml"
 hash = "75ff68dd0bfb30f2ff97f170ffbb74d5b6aaa791416c4a0559d09ac8778561ba"
+metafile = true
+
+[[files]]
+file = "mods/rising-toxicity.pw.toml"
+hash = "6a722d3b885b3847d4a6c5989421316423e261cb0cb9c413cece55cc3c0ae35b"
 metafile = true
 
 [[files]]

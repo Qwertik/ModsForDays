@@ -1,0 +1,13 @@
+name = "Rising Toxicity"
+filename = "risingtoxicity-1.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "45bcfde33b92983505c2247593cfb4a7aa0c6e98"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8016860
+project-id = 1527356
