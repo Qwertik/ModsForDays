@@ -6,7 +6,7 @@ hash = "85177c5e8fc12b8688ca61ccc8c0af013ce93b246298908cb81224fb917f9d0e"
 
 [[files]]
 file = "kubejs/server_scripts/toxicity_reset.js"
-hash = "e1dcedd94520537ec2098b77b1f925673735fa305a18dd40af0dbafc83fe8f5f"
+hash = "5988b925a67938a29d56a38bc59411e44def7c908f6cfbfa8d4a3df4fa79314f"
 
 [[files]]
 file = "mods/accelerated-decay.pw.toml"
@@ -470,7 +470,7 @@ metafile = true
 
 [[files]]
 file = "mods/oritech.pw.toml"
-hash = "68727fe01256af246ebfe2953c37d2117764961c1a288743c0d69fb4621db4d4"
+hash = "df77777f16721b62b00acef9f14c720e954081459aa532dd8e2d597aafb02a81"
 metafile = true
 
 [[files]]
