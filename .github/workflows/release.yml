@@ -38,12 +38,13 @@ jobs:
       - name: Build server pack
         run: |
           packwiz curseforge export --side server -y
-          # Inject server startup scripts into overrides
+          # Repack: put startup scripts at zip root (not in overrides)
           mkdir -p /tmp/server-repack
           cd /tmp/server-repack
           unzip "$GITHUB_WORKSPACE"/Zephyr*.zip
-          cp "$GITHUB_WORKSPACE/server-files/start.sh" overrides/
-          cp "$GITHUB_WORKSPACE/server-files/start.bat" overrides/
+          cp "$GITHUB_WORKSPACE/server-files/startserver.sh" .
+          cp "$GITHUB_WORKSPACE/server-files/startserver.bat" .
+          chmod +x startserver.sh
           rm -f "$GITHUB_WORKSPACE"/Zephyr*.zip
           zip -r "$GITHUB_WORKSPACE/ZephyrsWake-${{ steps.version.outputs.tag }}-server.zip" .
           cd "$GITHUB_WORKSPACE"
