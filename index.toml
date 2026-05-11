@@ -1,5 +1,5 @@
 hash-format = "sha256"
-
+commit
 [[files]]
 file = "build-server-pack.sh"
 hash = "9fee292dd3e59dfab4e52002dc6b6a9eba3c7137cbae182b0dfba310777a4394"
@@ -360,6 +360,11 @@ metafile = true
 [[files]]
 file = "mods/factory-blocks.pw.toml"
 hash = "f8890e55be67dddba9789c5913e934ae06c2f0c3af83c231916c0ef305a16ff5"
+metafile = true
+
+[[files]]
+file = "mods/ferritecore.pw.toml"
+hash = "dff824171060c79b327a4880c2f0546c727a041a489ef3af643ec2dcd9cd0c48"
 metafile = true
 
 [[files]]
