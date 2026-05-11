@@ -213,11 +213,6 @@ hash = "28730986547bac2d97995a45ef3f9bf987e20242d2222376344c3cdc31493ecc"
 metafile = true
 
 [[files]]
-file = "mods/connectivity.pw.toml"
-hash = "81105a1a363873f3675a861d228abcf0f2a8356f1a17850c06f6d6c47e454634"
-metafile = true
-
-[[files]]
 file = "mods/construction-sticks.pw.toml"
 hash = "893aad9df7e8e031d36ac74f9129f3cb3ad27f74db3bd4a71d32a6058f933ff6"
 metafile = true
@@ -310,11 +305,6 @@ metafile = true
 [[files]]
 file = "mods/cucumber.pw.toml"
 hash = "a1e99e73f9b3d71358832896d6a08d45c55b7a0037e00df69f98ba6880994341"
-metafile = true
-
-[[files]]
-file = "mods/cupboard.pw.toml"
-hash = "a079bf8579ded1a9eeba488f91bdf632a41ac2c35a0cccd8c3aa3cc9ddb7250d"
 metafile = true
 
 [[files]]
