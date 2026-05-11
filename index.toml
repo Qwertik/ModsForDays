@@ -1,5 +1,5 @@
 hash-format = "sha256"
-commit
+
 [[files]]
 file = "build-server-pack.sh"
 hash = "9fee292dd3e59dfab4e52002dc6b6a9eba3c7137cbae182b0dfba310777a4394"
