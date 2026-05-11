@@ -32,25 +32,6 @@ jobs:
           packwiz curseforge export --side client -y
           # packwiz names the zip from pack.toml; rename to safe filename
           mv Zephyr*.zip "ZephyrsWake-${{ steps.version.outputs.tag }}-client.zip"
-          # Move client zip to /tmp so it doesn't interfere with server build
-          mv "ZephyrsWake-${{ steps.version.outputs.tag }}-client.zip" /tmp/
-
-      - name: Build server pack
-        run: |
-          packwiz curseforge export --side server -y
-          # Repack: put startup scripts at zip root (not in overrides)
-          mkdir -p /tmp/server-repack
-          cd /tmp/server-repack
-          unzip "$GITHUB_WORKSPACE"/Zephyr*.zip
-          cp "$GITHUB_WORKSPACE/server-files/startserver.sh" .
-          cp "$GITHUB_WORKSPACE/server-files/startserver.bat" .
-          chmod +x startserver.sh
-          rm -f "$GITHUB_WORKSPACE"/Zephyr*.zip
-          zip -r "$GITHUB_WORKSPACE/ZephyrsWake-${{ steps.version.outputs.tag }}-server.zip" .
-          cd "$GITHUB_WORKSPACE"
-          rm -rf /tmp/server-repack
-          # Bring client zip back
-          mv "/tmp/ZephyrsWake-${{ steps.version.outputs.tag }}-client.zip" .
 
       - name: Generate changelog
         id: changelog
@@ -125,7 +106,6 @@ jobs:
           } >> "$GITHUB_OUTPUT"
 
       - name: Upload to CurseForge (client)
-        id: cf-upload
         if: vars.CURSEFORGE_PROJECT_ID != ''
         uses: itsmeow/curseforge-upload@v3
         with:
@@ -139,25 +119,9 @@ jobs:
           game_versions: "1.21.1"
           release_type: release
 
-      - name: Upload to CurseForge (server)
-        if: vars.CURSEFORGE_PROJECT_ID != '' && steps.cf-upload.outputs.id != ''
-        uses: itsmeow/curseforge-upload@v3
-        with:
-          token: ${{ secrets.CURSEFORGE_TOKEN }}
-          project_id: ${{ vars.CURSEFORGE_PROJECT_ID }}
-          game_endpoint: minecraft
-          file_path: ZephyrsWake-${{ steps.version.outputs.tag }}-server.zip
-          display_name: "Zephyr's Wake ${{ steps.version.outputs.tag }} (Server)"
-          changelog: ${{ steps.changelog.outputs.notes }}
-          changelog_type: markdown
-          game_versions: "1.21.1"
-          release_type: release
-          parent_file_id: ${{ steps.cf-upload.outputs.id }}
-
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           body_path: /tmp/changelog.md
           files: |
             ZephyrsWake-${{ steps.version.outputs.tag }}-client.zip
-            ZephyrsWake-${{ steps.version.outputs.tag }}-server.zip
