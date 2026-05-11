@@ -123,11 +123,6 @@ hash = "38bddea8d550568799dd7f208c0bbe10280de3e456016a0d59aa20de112a2345"
 metafile = true
 
 [[files]]
-file = "mods/attributefix.pw.toml"
-hash = "a445471ac6843bcf9fb76eabb4357de0357dfa7782be536a7827a26764fe45c1"
-metafile = true
-
-[[files]]
 file = "mods/auroras.pw.toml"
 hash = "22523481b7a5b3be8e086462d6598a209d5ccdd3fea0c6a2c6384e9aa92b40ec"
 metafile = true
